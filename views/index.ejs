@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div>
+        <h1>URL Shortener</h1>
+    </div>
+    <form action="/shorten" method="POST">
+        <input type="text" name="fullUrl" placeholder="Enter URL">
+        <button type="submit">Shorten</button>
+    </form>
+    <% shortUrls.forEach((shortUrl) => { %>
+        <% if (shortUrl.full && shortUrl.short) { %>
+            <div>
+                <a href="<%= shortUrl.full %>"><%= shortUrl.full %></a>
+                <div>
+                    <span>Shortened URL: </span>
+                    <a href="<%= baseUrl + shortUrl.short %>"><%= baseUrl + shortUrl.short %></a>
+                </div>
+            </div>
+        <% } %>
+    <% }) %>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "url-shortener-webapp-mern",
+  "version": "1.0.0",
+  "description": "- Node.js (Backend)\r - HTML, CSS, JavaScript, React (Frontend)\r - MongoDB (Storage)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.4.5",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  }
+}
